@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio src="" id="audio-source"></audio>
+    <!-- home section -->
+
+    <section class="home-section">
+        <!-- carousel -->
+        <div class="carousel">
+            <img src="assets/images/cover 1.png" class="active">
+            <img src="assets/images/cover 2.png" alt="">
+            <img src="assets/images/cover 3.png" alt="">
+            <img src="assets/images/cover 4.png" alt="">
+            <img src="assets/images/cover 5.png" alt="">
+            
+        </div>
+
+        <!-- playlists -->
+        <h1 class="heading">
+        recently played
+        </h1>
+        <div class="playlists-group">
+            <div class="playlist-card">
+                <img src="assets/images/cover 9.png" class="playlist-card-img">
+                <p class="playlist-card-name">top international </p>
+            </div>
+            <div class="playlist-card">
+                <img src="assets/images/images(21).jpeg" class="playlist-card-img">
+                <p class="playlist-card-name"> Synthwave Music</p>
+            </div>
+            <div class="playlist-card">
+                <img src="assets/images/images(22).jpg" class="playlist-card-img">
+                <p class="playlist-card-name"> Phonk Music </p>
+            </div>
+            <div class="playlist-card">
+                <img src="assets/images/cover 11.png" class="playlist-card-img">
+                <p class="playlist-card-name"> Punjabi Songs </p>
+            </div>
+            <div class="playlist-card">
+                <img src="assets/images/cover 5.png" class="playlist-card-img">
+                <p class="playlist-card-name">English Songs </p>
+            </div>
+        </div>
+
+        <h1 class="heading">
+            Based On Your Listening
+            </h1>
+            <div class="playlists-group">
+                <div class="playlist-card">
+                    <img src="assets/images/cover 2.png" class="playlist-card-img">
+                    <p class="playlist-card-name">Frequently Played </p>
+                </div>
+                <div class="playlist-card">
+                    <img src="assets/images/image(1).jpg" class="playlist-card-img">
+                    <p class="playlist-card-name"> Narvent Music</p>
+                </div>
+                <div class="playlist-card">
+                    <img src="assets/images/images (14).jpeg" class="playlist-card-img">
+                    <p class="playlist-card-name"> Phonk Music </p>
+                </div>
+                <div class="playlist-card">
+                    <img src="assets/images/images (4).jpeg" class="playlist-card-img">
+                    <p class="playlist-card-name"> Punjabi Songs </p>
+                </div>
+                <div class="playlist-card">
+                    <img src="assets/images/images (9).jpeg" class="playlist-card-img">
+                    <p class="playlist-card-name">The Weeknd </p>
+                </div>
+            </div>
+    </section>
+
+    <section class="music-player-section">
+        <img src="assets/images/back.png" 
+        class="back-btn  icon hide">
+        <img src="assets/images/nav.png" 
+        class="nav-btn  icon hide">
+        <h1 class="current-song-name">Euphoria</h1>
+        <p class="artist-name hide">Narvent</p>
+        <img src="assets/images/image(1).jpg" alt="" class="cover hide">
+    <div class="seek-bar-container">
+        <input type="range" class="music-seek-bar" value="0">
+        <p class="current-time  hide">00:00</p>
+        <p class="duration  hide">00:00</p>
+
+    </div>
+    <div class="controls">
+        <span class="fas fa-redo"></span>
+        
+        <div class="main">
+            <i class="fas fa-backward active"></i>
+            <i class="fas fa-play active"></i>
+            <i class="fas fa-pause"></i>
+            <i class="fas fa-forward active"></i>
+        </div>
+        <input type="range" class="volume-slider" max="1" value="1" step="0.1">
+        <span class="fas fa-volume-up"></span>
+    </div>
+    </section>
+
+    <section class="playlist">
+        <img src="assets/images/back.png" class="back-btn icon">
+        <h1 class="title">playlist</h1>
+        <div class="queue active">
+            <div class="queue-cover">
+                <img src="assets/images/image(1).jpg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Euphoria</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/images (2).jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Fainted</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/images (3).jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Rubicon Drill</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/images (4).jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Admirin You</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/images (5).jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Check It Out</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/images (6).jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Kaana Pe Baal</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/images (7).jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Blue Monday</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/images (8).jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Midnight City</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/images (9).jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Popular</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/images (10).jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Living Life, In The Night</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/images (11).jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">After Dark</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/images (12).jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Night Work</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/images (13).jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Night Call</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/images (14).jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Wake Up</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/images (15).jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">METAMORPHOSIS</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/images (16).jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Sleepwalker</p>
+        </div>
+
+        <!-- <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/images (17).jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Untitled#13</p>
+        </div> -->
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/images (18).jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">NEON BLADE</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/images (19).jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Ecstasy</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/images (20).jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Killers Form The Northside</p>
+        </div>
+    </section>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
